@@ -1,4 +1,4 @@
-package com.dani.producto;
+package com.dani.app.modelo;
 
 public class Producto {
     private int id;
