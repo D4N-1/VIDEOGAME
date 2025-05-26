@@ -7,6 +7,7 @@ public class Pedido {
     private int cantidad;
     private String categoria;
     private String descripcion;
+    private String cliente;
 
     public Pedido(String nombre, double precio, int cantidad, String categoria, String descripcion) {
         this.nombre = nombre;
@@ -14,6 +15,7 @@ public class Pedido {
         this.cantidad = cantidad;
         this.categoria = categoria;
         this.descripcion = descripcion;
+        this.cliente = cliente;
     }
 
     public Pedido() {}
@@ -64,6 +66,14 @@ public class Pedido {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public String getCliente (String cliente){
+        this.cliente = cliente;
+    }
+
+    public void setDescripcion(String cliente){
+        this.cliente = cliente;
     }
 }
 

@@ -3,9 +3,6 @@ package main.java.modelo;
 public class ProductoVirtual {
     private int id;
     private String nombre;
-    private double precio;
-    private int cantidad;
-    private String categoria;
     private String descripcion;
 
     public ProductoVirtual(String nombre, double precio, int cantidad, String categoria, String descripcion) {
@@ -32,30 +29,6 @@ public class ProductoVirtual {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public int getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
     }
 
     public String getDescripcion() {
