@@ -1,4 +1,4 @@
-package main.java.tienda.modelo;
+package tienda.modelo;
 
 public class Servicio {
     private int id;
