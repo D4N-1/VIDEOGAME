@@ -10,7 +10,6 @@ public class Servicio {
     public Servicio(String nombre, double precio, int cantidad, String categoria, String descripcion) {
         this.nombre = nombre;
         this.precio = precio;
-        this.cantidad = cantidad;
         this.categoria = categoria;
         this.descripcion = descripcion;
     }

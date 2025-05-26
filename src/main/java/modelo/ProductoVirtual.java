@@ -7,9 +7,6 @@ public class ProductoVirtual {
 
     public ProductoVirtual(String nombre, double precio, int cantidad, String categoria, String descripcion) {
         this.nombre = nombre;
-        this.precio = precio;
-        this.cantidad = cantidad;
-        this.categoria = categoria;
         this.descripcion = descripcion;
     }
 

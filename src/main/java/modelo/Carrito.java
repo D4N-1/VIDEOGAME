@@ -3,13 +3,13 @@ package main.java.modelo;
 public class Carrito {
     private int id;
     private String cliente;
-    private String listaVideojuegos;
+    private String lista;
     private String total;
 
-    public Carrito(int id, String cliente, String listaVideojuegos, String total) {
+    public Carrito(int id, String cliente, String lista, String total) {
         this.id = id;
         this.cliente = cliente;
-        this listaVideojuegos = listaVideojuegos;
+        this.lista = lista;
         this.total = total;
         
     }
@@ -32,12 +32,12 @@ public class Carrito {
         this.cliente = cliente;
     }
 
-    public String getlistaVideojuegos() {
-        return listaVideojuegos;
+    public String getlista() {
+        return lista;
     }
 
-    public void sedlistaVideojuegos(String listaVideojuegos) {
-        this listaVideojuegos = listaVideojuegos;
+    public void sedlista(String lista) {
+        this.lista = lista;
     }
 
     public String getTotal() {

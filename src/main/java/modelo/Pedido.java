@@ -9,7 +9,7 @@ public class Pedido {
     private String descripcion;
     private String cliente;
 
-    public Pedido(String nombre, double precio, int cantidad, String categoria, String descripcion) {
+    public Pedido(String nombre, double precio, int cantidad, String categoria, String descripcion, String cliente) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
@@ -68,11 +68,11 @@ public class Pedido {
         this.descripcion = descripcion;
     }
 
-    public String getCliente (String cliente){
-        this.cliente = cliente;
+    public String getCliente() {
+        return cliente;
     }
 
-    public void setDescripcion(String cliente){
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
 }
