@@ -7,13 +7,15 @@ public class Devoluciones {
     private int cantidad;
     private String categoria;
     private String descripcion;
+    private String cliente;
 
-    public Devoluciones(String nombre, double precio, int cantidad, String categoria, String descripcion) {
+    public Devoluciones(String nombre, double precio, int cantidad, String categoria, String descripcion, String cliente) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
         this.categoria = categoria;
         this.descripcion = descripcion;
+        this.cliente = cliente;
     }
 
     public Devoluciones() {}
@@ -65,5 +67,15 @@ public class Devoluciones {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+    
+    public String getCliente(String cliente) {
+        this.cliente = cliente;
+    }
+
+    public void setCliente(String cliente) {
+        return cliente;
+    }
+
+
 }
 
