@@ -68,12 +68,13 @@ public class Devoluciones {
         this.descripcion = descripcion;
     }
     
-    public String getCliente(String cliente) {
-        this.cliente = cliente;
+    public String getCliente() {
+        return cliente;
     }
 
     public void setCliente(String cliente) {
-        return cliente;
+        this.cliente = cliente;
+
     }
 
 
