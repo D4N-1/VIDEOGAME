@@ -1,24 +1,22 @@
-package com.dani.app.modelo;
+package main.java.modelo;
 
-public class Devoluciones {
+public class Reseña {
     private int id;
     private String nombre;
     private double precio;
     private int cantidad;
     private String categoria;
     private String descripcion;
-    private String cliente;
 
-    public Devoluciones(String nombre, double precio, int cantidad, String categoria, String descripcion, String cliente) {
+    public Reseña(String nombre, double precio, int cantidad, String categoria, String descripcion) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
         this.categoria = categoria;
         this.descripcion = descripcion;
-        this.cliente = cliente;
     }
 
-    public Devoluciones() {}
+    public Reseña() {}
 
     public int getId() {
         return id;
@@ -67,15 +65,5 @@ public class Devoluciones {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
-    
-    public String getCliente(String cliente) {
-        this.cliente = cliente;
-    }
-
-    public void setCliente(String cliente) {
-        return cliente;
-    }
-
-
 }
 

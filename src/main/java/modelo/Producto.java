@@ -1,6 +1,6 @@
-package com.dani.app.modelo;
+package main.java.modelo;
 
-public class Servicio {
+public class Producto {
     private int id;
     private String nombre;
     private double precio;
@@ -8,7 +8,7 @@ public class Servicio {
     private String categoria;
     private String descripcion;
 
-    public Servicio(String nombre, double precio, int cantidad, String categoria, String descripcion) {
+    public Producto(String nombre, double precio, int cantidad, String categoria, String descripcion) {
         this.nombre = nombre;
         this.precio = precio;
         this.cantidad = cantidad;
@@ -16,7 +16,7 @@ public class Servicio {
         this.descripcion = descripcion;
     }
 
-    public Servicio() {}
+    public Producto() {}
 
     public int getId() {
         return id;

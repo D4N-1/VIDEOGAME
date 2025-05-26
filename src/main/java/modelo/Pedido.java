@@ -1,4 +1,4 @@
-package com.dani.app.modelo;
+package main.java.modelo;
 
 public class Pedido {
     private int id;
