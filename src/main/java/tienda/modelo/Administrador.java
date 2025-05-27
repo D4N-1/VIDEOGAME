@@ -1,4 +1,4 @@
-package main.java.tienda.modelo;
+package tienda.modelo;
 
 public class Administrador {
     private int id;

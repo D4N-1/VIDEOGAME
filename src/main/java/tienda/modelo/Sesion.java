@@ -1,4 +1,4 @@
-package main.java.tienda.modelo;
+package tienda.modelo;
 
 import java.time.LocalDateTime;
 
