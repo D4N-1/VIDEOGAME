@@ -1,4 +1,4 @@
-package tienda.controlador.servicio;
+package tienda.servicio;
 
 
 

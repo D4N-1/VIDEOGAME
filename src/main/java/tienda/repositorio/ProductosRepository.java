@@ -1,4 +1,4 @@
-package tienda.controlador.repositorio;
+package tienda.repositorio;
 
 public class ProductosRepository {
     
