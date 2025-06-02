@@ -1,19 +1,29 @@
 package tienda.modelo;
 
-public class Mensaje {
+public class Mensaje<T> {
     private String mensaje;
-    private Object detalles;
+    private T data;
 
-    public Mensaje(String mensaje, Object detalles) {
+    public Mensaje(String mensaje, T data) {
         this.mensaje = mensaje;
-        this.detalles = detalles;
+        this.data = data;
     }
+
+    public Mensaje() {}
 
     public String getMensaje() {
         return mensaje;
     }
 
-    public Object getDetalles() {
-        return detalles;
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
     }
-}    
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+}
