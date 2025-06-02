@@ -1,5 +1,6 @@
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\controlador\exceptionController.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\controlador\HealthController.java
+C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\controlador\PlataformaController.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\controlador\ProductoController.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\exception\BadParameterException.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\exception\NotFoundException.java
@@ -21,5 +22,7 @@ C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\modelo\Servici
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\modelo\Sesion.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\modelo\Soporte.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\modelo\Sucursal.java
+C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\repositorio\PlataformaRepository.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\repositorio\ProductosRepository.java
+C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\servicio\PlataformaService.java
 C:\Users\Administrator\Desktop\ITP\VIDEOGAME\src\main\java\tienda\servicio\ProductoService.java
