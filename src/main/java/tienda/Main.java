@@ -9,7 +9,24 @@ import tienda.controlador.ProductoController;
 import tienda.repositorio.PlataformaRepository;
 import tienda.servicio.PlataformaService;
 import tienda.controlador.PlataformaController;
-
+import tienda.repositorio.DevolucionesRepository;
+import tienda.servicio.DevolucionesService;
+import tienda.controlador.DevolucionesController;
+import tienda.repositorio.PedidoRepository;
+import tienda.servicio.PedidoService;
+import tienda.controlador.PedidoController;
+import tienda.repositorio.FacturaRepository;
+import tienda.servicio.FacturaService;
+import tienda.controlador.FacturaController;
+import tienda.repositorio.ProductoVirtualRepository;
+import tienda.servicio.ProductoVirtualService;
+import tienda.controlador.ProductoVirtualController;
+import tienda.repositorio.ReseñaRepository;
+import tienda.servicio.ReseñaService;
+import tienda.controlador.ReseñaController;
+import tienda.repositorio.ServicioRepository;
+import tienda.servicio.ServicioService;
+import tienda.controlador.ServicioController;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +37,31 @@ public class Main {
         PlataformaRepository PlataformaRepository = new PlataformaRepository();
         PlataformaService plataformaService = new PlataformaService(PlataformaRepository);
         PlataformaController plataformaController = new PlataformaController(plataformaService);
+
+        DevolucionesRepository DevolucionesRepository = new DevolucionesRepository();
+        DevolucionesService devolucionesService = new DevolucionesService(DevolucionesRepository);
+        DevolucionesController devolucionesController = new DevolucionesController(devolucionesService);
+
+        PedidoRepository PedidoRepository = new PedidoRepository();
+        PedidoService pedidoService = new PedidoService(PedidoRepository);
+        PedidoController pedidoController = new PedidoController(pedidoService);
+
+
+        FacturaRepository facturaRepository = new FacturaRepository();
+        FacturaService facturaService = new FacturaService(facturaRepository);
+        FacturaController facturaController = new FacturaController(facturaService);
+
+        ProductoVirtualRepository productoVirtualRepository = new ProductoVirtualRepository();
+        ProductoVirtualService productoVirtualService = new ProductoVirtualService(productoVirtualRepository);
+        ProductoVirtualController productoVirtualController = new ProductoVirtualController(productoVirtualService);
+
+        ReseñaRepository reseñaRepository = new ReseñaRepository();
+        ReseñaService reseñaService = new ReseñaService(reseñaRepository);
+        ReseñaController reseñaController = new ReseñaController(reseñaService);
+
+        ServicioRepository servicioRepository = new ServicioRepository();
+        ServicioService servicioService = new ServicioService(servicioRepository);
+        ServicioController servicioController = new ServicioController(servicioService);
         
         exceptionController exceptionController = new exceptionController();
         HealthController healthController = new HealthController();
@@ -31,6 +73,12 @@ public class Main {
         healthController.configurarRutas(app);
         productoController.configurarRutas(app);
         plataformaController.configurarRutas(app);
+        devolucionesController.configurarRutas(app);
+        facturaController.configurarRutas(app);
+        pedidoController.configurarRutas(app);
+        productoVirtualController.configurarRutas(app);
+        reseñaController.configurarRutas(app);
+        servicioController.configurarRutas(app);
     
         app.before(ctx -> ctx.header("Content-Type", "application/json"));
 
