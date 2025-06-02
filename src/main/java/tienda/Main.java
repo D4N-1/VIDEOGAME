@@ -82,6 +82,6 @@ public class Main {
     
         app.before(ctx -> ctx.header("Content-Type", "application/json"));
 
-        app.start(7000);
+        app.start(7070);
     }
 }
