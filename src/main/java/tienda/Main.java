@@ -28,6 +28,10 @@ import tienda.repositorio.ServicioRepository;
 import tienda.servicio.ServicioService;
 import tienda.controlador.ServicioController;
 
+import tienda.repositorio.CarritoRepository;
+import tienda.servicio.CarritoService;
+import tienda.controlador.CarritoController;
+
 public class Main {
     public static void main(String[] args) {
         ProductosRepository productosRepository = new ProductosRepository();
@@ -62,6 +66,11 @@ public class Main {
         ServicioRepository servicioRepository = new ServicioRepository();
         ServicioService servicioService = new ServicioService(servicioRepository);
         ServicioController servicioController = new ServicioController(servicioService);
+
+        CarritoRepository carritoRepository = new CarritoRepository();
+        CarritoService carritoService = new CarritoService(carritoRepository);
+        CarritoController carritoController = new CarritoController(carritoService);
+        
         
         exceptionController exceptionController = new exceptionController();
         HealthController healthController = new HealthController();
@@ -79,6 +88,8 @@ public class Main {
         productoVirtualController.configurarRutas(app);
         reseñaController.configurarRutas(app);
         servicioController.configurarRutas(app);
+        carritoController.configurarRutas(app);
+    
     
         app.before(ctx -> ctx.header("Content-Type", "application/json"));
 
