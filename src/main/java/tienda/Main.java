@@ -27,14 +27,21 @@ import tienda.controlador.ReseñaController;
 import tienda.repositorio.ServicioRepository;
 import tienda.servicio.ServicioService;
 import tienda.controlador.ServicioController;
-
 import tienda.repositorio.CarritoRepository;
 import tienda.servicio.CarritoService;
 import tienda.controlador.CarritoController;
-
 import tienda.repositorio.ClienteRepository;
 import tienda.servicio.ClienteService;
 import tienda.controlador.ClienteController;
+import tienda.repositorio.ProveedorRepository;
+import tienda.servicio.ProveedorService;
+import tienda.controlador.ProveedorController;
+import tienda.repositorio.SoporteRepository;
+import tienda.servicio.SoporteService;
+import tienda.controlador.SoporteController;
+import tienda.repositorio.SucursalRepository;
+import tienda.servicio.SucursalService;
+import tienda.controlador.SucursalController;
 
 public class Main {
     public static void main(String[] args) {
@@ -78,6 +85,18 @@ public class Main {
         ClienteRepository clienteRepository = new ClienteRepository();
         ClienteService clienteService = new ClienteService(clienteRepository);
         ClienteController clienteController = new ClienteController(clienteService);
+
+        ProveedorRepository proveedorRepository = new ProveedorRepository();
+        ProveedorService proveedorService = new ProveedorService(proveedorRepository);
+        ProveedorController proveedorController = new ProveedorController(proveedorService);
+
+        SoporteRepository soporteRepository = new SoporteRepository();
+        SoporteService soporteService = new SoporteService(soporteRepository);
+        SoporteController soporteController = new SoporteController(soporteService);
+
+        SucursalRepository sucursalRepository = new SucursalRepository();
+        SucursalService sucursalService = new SucursalService(sucursalRepository);
+        SucursalController sucursalController = new SucursalController(sucursalService);
         
         
         exceptionController exceptionController = new exceptionController();
@@ -98,10 +117,14 @@ public class Main {
         servicioController.configurarRutas(app);
         carritoController.configurarRutas(app);
         clienteController.configurarRutas(app);
+
+        proveedorController.configurarRutas(app);
+        soporteController.configurarRutas(app);
+        sucursalController.configurarRutas(app);
     
     
         app.before(ctx -> ctx.header("Content-Type", "application/json"));
 
-        app.start(7071);
+        app.start(7075);
     }
 }
