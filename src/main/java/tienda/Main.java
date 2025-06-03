@@ -32,6 +32,10 @@ import tienda.repositorio.CarritoRepository;
 import tienda.servicio.CarritoService;
 import tienda.controlador.CarritoController;
 
+import tienda.repositorio.ClienteRepository;
+import tienda.servicio.ClienteService;
+import tienda.controlador.ClienteController;
+
 public class Main {
     public static void main(String[] args) {
         ProductosRepository productosRepository = new ProductosRepository();
@@ -70,6 +74,10 @@ public class Main {
         CarritoRepository carritoRepository = new CarritoRepository();
         CarritoService carritoService = new CarritoService(carritoRepository);
         CarritoController carritoController = new CarritoController(carritoService);
+
+        ClienteRepository clienteRepository = new ClienteRepository();
+        ClienteService clienteService = new ClienteService(clienteRepository);
+        ClienteController clienteController = new ClienteController(clienteService);
         
         
         exceptionController exceptionController = new exceptionController();
@@ -89,10 +97,11 @@ public class Main {
         reseñaController.configurarRutas(app);
         servicioController.configurarRutas(app);
         carritoController.configurarRutas(app);
+        clienteController.configurarRutas(app);
     
     
         app.before(ctx -> ctx.header("Content-Type", "application/json"));
 
-        app.start(7070);
+        app.start(7071);
     }
 }
